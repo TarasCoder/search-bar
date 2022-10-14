@@ -30,3 +30,31 @@
 .users__phone {
     font-size: 13px;
 }
+
+.selected-user {
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.hide-block {
+  display: none;
+}
+
+.selected-user p {
+  margin-bottom: 0;
+}
+.selected-user__header{
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-decoration: underline;
+}
+.selected-user__name {
+}
+.selected-user__phone {
+}
+.selected-user__email {
+}
+

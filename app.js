@@ -8,18 +8,42 @@ let users = [
 ];
 
 const usersContainer = document.getElementById("users");
+const searchField = document.getElementById("search");
+const selectedUser = document.getElementById("selectedUser");
+const selectedUserName = document.getElementById("selected-user__name");
+const selectedUserPhone = document.getElementById("selected-user__phone");
+const selectedUserEmail = document.getElementById("selected-user__email");
+
 
 $("#search").on("input", function (ev) {
   clearUsers(usersContainer);
-  console.log("asd");
+
   let userInput = ev.target.value;
   if (!userInput == "") {
     let filteredUsers = users.filter((item) => {
         return item.name.toLowerCase().includes(userInput.toLowerCase());
       });
       renderingUsers(filteredUsers);
+
+      // Reacting on click by card
+      let elements = $(usersContainer).find("div");
+      elements.each(function(){
+        this.addEventListener("click", function(){
+          selectedUserName.innerText = $(this).find(".users__name").text();
+          selectedUserPhone.innerText = $(this).find(".users__email").text();
+          selectedUserEmail.innerText = $(this).find(".users__phone").text();
+          selectedUser.classList.remove("hide-block")
+          searchField.value = $(this).find(".users__name").text();
+          clearUsers(usersContainer);
+        })
+      });
+
   }
 });
+
+$(".users").click(function(){
+  console.log("clicked");
+})
 
 function renderingUsers(searchRequest) {
   clearUsers(usersContainer);
