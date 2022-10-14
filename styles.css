@@ -1,0 +1,31 @@
+.wrapper {
+  width: 200px;
+  display: block;
+  margin: 100px auto;
+}
+.search {
+  width: 100%;
+  padding: 5px;
+}
+.search:focus {
+  outline: none;
+}
+.users {
+}
+.users__card {
+  border: 1px solid grey;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.users__card p {
+  margin-bottom: 2px;
+}
+.users__name {
+    font-weight: 500;
+}
+.users__email {
+    font-style: italic;
+}
+.users__phone {
+    font-size: 13px;
+}
