@@ -1,10 +1,10 @@
 let users = [
-  { name: "Sam", email: "sam@gmail.com", phone: "123-456-1234" },
-  { name: "Bob", email: "bob@gmail.com", phone: "+456715126115" },
-  { name: "Amanda", email: "am1981@gmail.com", phone: "+48945161216" },
-  { name: "Rick", email: "rick@gmail.com", phone: "+4516256154878" },
-    { name: "Bibi", email: "bibi1999@gmail.com", phone: "+89542135484" },
-    { name: "Mimi", email: "mimi-45@gmail.com", phone: "+89542135484" },
+  { name: "Sam", email: "sam@gmail.com", phone: "123-4356-1234" },
+  { name: "Bob", email: "bob@gmail.com", phone: "+4567155126115" },
+  { name: "Amanda", email: "am1983@gmail.com", phone: "+489455161216" },
+  { name: "Rick", email: "rick@gmail.com", phone: "+45162562154878" },
+    { name: "Bibi", email: "bibi1979@gmail.com", phone: "+839542135484" },
+    { name: "Mimi", email: "mimi-45@gmail.com", phone: "+8954214345484" },
 ];
 
 const usersContainer = document.getElementById("users");
